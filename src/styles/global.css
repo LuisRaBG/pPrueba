@@ -1,0 +1,49 @@
+/* src/styles/global.css */
+
+body {
+  margin: 0;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif; /* Fuente base */
+  -webkit-font-smoothing: antialiased; /* Suavizado WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suavizado Firefox */
+  background-color: #F8F9FA; /* Fondo por defecto del tema (BACKGROUND_DEFAULT) */
+  color: #1B396A; /* Color primario del tema (ajustar si text.primary es diferente) */
+
+  /* --- Mejoras Específicas para Móvil --- */
+
+  /* Evitar zoom automático en inputs al enfocar en iOS */
+  /* Nota: Puede requerir font-size >= 16px en los inputs para funcionar siempre */
+  /* input, textarea, select { font-size: 16px; } */
+
+  /* Evitar inflación automática de texto en algunos navegadores móviles */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  /* Eliminar el resaltado azul/gris al tocar elementos en WebKit */
+  -webkit-tap-highlight-color: transparent;
+
+  /* Mejorar el comportamiento del scroll en iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Scrollbar styles are now primarily handled by MuiCssBaseline in theme.js */
+/* Keeping this commented block is optional, but likely unnecessary */
+/*
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+*/
+
+/* Añadir otros estilos globales aquí si son necesarios */
